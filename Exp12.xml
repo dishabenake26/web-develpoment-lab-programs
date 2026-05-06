@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Exp12.xsl"?>
+
+<students>
+    <student id="1">
+        <name>Tanvi</name>
+        <branch>CSE</branch>
+        <year>1st Year</year>
+        <city>Kolhapur</city>
+    </student>
+
+    <student id="25">
+        <name>Disha</name>
+        <branch>CSE</branch>
+        <year>2nd Year</year>
+        <city>Kolhapur</city>
+    </student>
+
+    <student id="85">
+        <name>Navami</name>
+        <branch>CSE</branch>
+        <year>3nd Year</year>
+        <city>Kolhapur</city>
+    </student>
+</students>
