@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Experiments</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #e0eafc, #cfdef3);
+        }
+
+        /* HEADER */
+        .header {
+            background: linear-gradient(90deg, #141e30, #243b55);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            padding: 18px;
+            font-size: 26px;
+            font-weight: bold;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+
+        /* REAL CODER IMAGE */
+        .header img {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            object-fit: cover;
+            background: white;
+            padding: 4px;
+            box-shadow: 0 0 15px #00ffe5, 0 0 30px #00aaff;
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            from { box-shadow: 0 0 10px #00ffe5; }
+            to { box-shadow: 0 0 25px #00aaff; }
+        }
+
+        .container {
+            display: flex;
+        }
+
+        /* LEFT PANEL */
+        .left-panel {
+            width: 250px;
+            background: rgba(44, 62, 80, 0.92);
+            color: white;
+            min-height: 100vh;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .left-panel h2 {
+            text-align: center;
+        }
+
+        .left-panel p {
+            margin: 10px 0;
+        }
+
+        /* RIGHT PANEL */
+        .right-panel {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .exp-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        /* NEON BUTTONS */
+        .exp-bar a {
+            position: relative;
+            text-decoration: none;
+            padding: 12px 18px;
+            background: #1f1f1f;
+            color: white;
+            border-radius: 25px;
+            font-size: 14px;
+            transition: 0.3s;
+            overflow: hidden;
+            border: 1px solid #00ffe5;
+        }
+
+        .exp-bar a:hover {
+            background: #00ffe5;
+            color: black;
+            transform: scale(1.08);
+            box-shadow: 0 0 15px #00ffe5, 0 0 30px #00aaff;
+        }
+
+        /* UNDERLINE EFFECT */
+        .exp-bar a::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 5px;
+            width: 0%;
+            height: 3px;
+            background: black;
+            transition: 0.3s;
+            transform: translateX(-50%);
+        }
+
+        .exp-bar a:hover::after {
+            width: 70%;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80" 
+             alt="Coding Image">
+        Web Development Laboratory
+    </div>
+
+    <div class="container">
+
+        <!-- LEFT PANEL -->
+        <div class="left-panel">
+            <h2>Student Info</h2>
+            <p><strong>Name:</strong> Disha Benake</p>
+            <p><strong>Roll No:</strong> 25</p>
+            <p><strong>Batch:</strong> S1</p>
+            <p><strong>Title:</strong> Lab Outputs</p>
+        </div>
+
+        <!-- RIGHT PANEL -->
+        <div class="right-panel">
+
+            <div class="exp-bar">
+                <a href="Exp1.html">Exp 1: Basic HTML</a>
+                <a href="Exp2.html">Exp 2: Static Page</a>
+                <a href="Exp3.html">Exp 3: Formatting</a>
+                <a href="Exp4.html">Exp 4: Lists</a>
+                <a href="Exp5.html">Exp 5: Images</a>
+                <a href="Exp6.html">Exp 6: Frames</a>
+                <a href="Exp7.html">Exp 7: Links</a>
+                <a href="Exp8.html">Exp 8: Tables</a>
+                <a href="Exp9.html">Exp 9: Form</a>
+                <a href="Exp10.html">Exp 10: Resume</a>
+                <a href="Exp11.xml">Exp 11: XML</a>
+                <a href="Exp12.xml">Exp 12: XSLT</a>
+                <a href="Exp13.xml">Exp 13: XSLT Conditional</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
